@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+$font: "Poppins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 7% 3% 3%;
+  max-width: 400px;
+  min-width: 350px;
+  width: 100%;
+  height: auto;
+  background: $Red;
+  overflow: hidden;
+
+  &-img-mobile,
+  &-img-desktop {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+  &-img-desktop {
+    display: none;
+  }
+}
+
+.content-text {
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  &-title {
+    margin-bottom: 10%;
+  }
+
+  &-paragraph {
+    margin-bottom: 15%;
+  }
+}
+
+.content-form {
+  z-index: 10;
+
+  &-promo {
+    color: #fff;
+    height: 70px;
+    background-color: $Blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 11px 40px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0px 5px 0px 0px rgba($color: #000000, $alpha: 0.2);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    padding: 8%;
+    box-shadow: 0px 5px 0px 0px rgba($color: #000000, $alpha: 0.2);
+  }
+
+  .input-field {
+    position: relative;
+    height: 66px;
+    .icon-error {
+      display: none;
+      position: absolute;
+      left: 90%;
+      top: 30.5%;
+      transform: translate(-50%, -50%);
+    }
+    label {
+      display: none;
+      position: relative;
+      font-weight: 600;
+      font-size: 11px;
+      margin-top: 4px;
+      float: right;
+      font-style: italic;
+      color: $Red;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid $Grayish-Blue;
+    border-radius: 6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    height: 55px;
+    background: $Green;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 0px 0px rgba($color: #000000, $alpha: 0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: hsl(154, 59%, 71%);
+    }
+  }
+
+  .terms-conditions {
+    text-align: center;
+    color: $Grayish-Blue;
+    font-size: 12px;
+
+    span {
+      color: $Red;
+    }
+  }
+}
+
+footer {
+  margin: 50px;
+  text-align: center;
+}
+
+@media (min-width: 916px) {
+  .container {
+    padding: 90px 15%;
+    max-width: 1440px;
+    width: 100%;
+    flex-direction: row;
+
+    &-img-mobile {
+      display: none;
+    }
+    &-img-desktop {
+      display: block;
+    }
+  }
+
+  .content-text {
+    width: 50%;
+    text-align: left;
+    padding-right: 7%;
+    padding-top: 15%;
+
+    &-title {
+      font-size: 45px;
+    }
+  }
+  .content-form {
+    width: 50%;
+
+    &-promo {
+      height: 55px;
+      line-height: 55px;
+      padding: 0;
+    }
+  }
+}

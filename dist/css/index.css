@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7% 3% 3%;
+  max-width: 400px;
+  min-width: 350px;
+  width: 100%;
+  height: auto;
+  background: #ff7a7a;
+  overflow: hidden;
+}
+
+.container-img-mobile, .container-img-desktop {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+}
+
+.container-img-desktop {
+  display: none;
+}
+
+.content-text {
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+
+.content-text-title {
+  margin-bottom: 10%;
+}
+
+.content-text-paragraph {
+  margin-bottom: 15%;
+}
+
+.content-form {
+  z-index: 10;
+}
+
+.content-form-promo {
+  color: #fff;
+  height: 70px;
+  background-color: #6055a5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 11px 40px;
+  text-align: center;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8%;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-form .input-field {
+  position: relative;
+  height: 66px;
+}
+
+.content-form .input-field .icon-error {
+  display: none;
+  position: absolute;
+  left: 90%;
+  top: 30.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content-form .input-field label {
+  display: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  margin-top: 4px;
+  float: right;
+  font-style: italic;
+  color: #ff7a7a;
+}
+
+.content-form input {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid #b9b6d3;
+  border-radius: 6px;
+}
+
+.content-form input:focus {
+  outline: none;
+}
+
+.content-form .btn {
+  color: #fff;
+  text-align: center;
+  line-height: 55px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 5%;
+  height: 55px;
+  background: #38cc8c;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content-form .btn:hover {
+  background: #89e1bb;
+}
+
+.content-form .terms-conditions {
+  text-align: center;
+  color: #b9b6d3;
+  font-size: 12px;
+}
+
+.content-form .terms-conditions span {
+  color: #ff7a7a;
+}
+
+footer {
+  margin: 50px;
+  text-align: center;
+}
+
+@media (min-width: 916px) {
+  .container {
+    padding: 90px 15%;
+    max-width: 1440px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container-img-mobile {
+    display: none;
+  }
+  .container-img-desktop {
+    display: block;
+  }
+  .content-text {
+    width: 50%;
+    text-align: left;
+    padding-right: 7%;
+    padding-top: 15%;
+  }
+  .content-text-title {
+    font-size: 45px;
+  }
+  .content-form {
+    width: 50%;
+  }
+  .content-form-promo {
+    height: 55px;
+    line-height: 55px;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
